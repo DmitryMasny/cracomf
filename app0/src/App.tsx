@@ -2,10 +2,6 @@ import React, {lazy} from "react";
 import "./App.css";
 import {ErrorBoundary} from 'react-error-boundary'
 
-
-// import Test3 from "app3/Test";
-// const Test3 = lazy(() => import('app3/Test'));
-
 // @ts-ignore
 const Grp = lazy(() => import('grp/App'));
 
@@ -28,7 +24,6 @@ function App() {
                     // reset the state of your app so the error doesn't happen again
                 }}
             >
-
                 <React.Suspense fallback="loading">
                     <Grp/>
                 </React.Suspense>
